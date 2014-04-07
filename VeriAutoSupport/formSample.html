@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja" >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Form Sample</title>
+	<link href="css/base_print.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<h1 id="header">Automation Trial</h1>
+
+<p></p>
+
+<form action="regist.php" method="post">
+<table class="table_100per">
+	<tbody>
+		<tr>
+		<th class="tcolor_dot">氏名</th>
+		<td class="tnormal"><input type="text" name="name" size="30" value="" /></td>
+		</tr>
+		<tr>
+		<th class="tcolor_dot">年齢</th>
+		<td class="tnormal"><input type="text" name="age" size="15" value="" /></td>
+		</tr>
+		<tr>
+		<th class="tcolor_dot">性別</th>
+		<td class="tnormal"><input type="radio" name="sex" value="mail" />男
+		<input type="radio" name="sex" value="female" />女
+		</td>
+		</tr>
+		<tr>
+		<th class="tcolor_dot">ファイル</th>
+		<td class="tnormal"><input type="file" name="upfile" size="30" />
+		</td>
+		</tr>
+	</tbody>
+</table>
+  <input type="submit" value="登録する" />
+</form>
+</body>
+</html>

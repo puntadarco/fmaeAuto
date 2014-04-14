@@ -10,15 +10,14 @@ class firstRegistration {
 	public function showTables($Con){
 		$TblArray = "test";
 		// Retrieve data
-		$sql_select = "SELECT * FROM registration_tbl";
+		$sql_select = "SELECT * FROM dbo.registration_tbl";
 		$stmt = $conn->query($sql_select);
 		$registrants = $stmt->fetchAll();
 		if(count($registrants) > 0) {
-			echo "<h2>People who are registered:</h2>";
-			echo "<table>";
-			echo "<tr><th>Name</th>";
-			echo "<th>Email</th>";
-			echo "<th>Date</th></tr>";
+			$rowArray = array();
+			$rowArray[] = $registrants['name']; 
+			$rowArray[] = $registrants['age']; 
+						$rowArray[] = $registrants['sex']; 
 			foreach($registrants as $registrant) {
 				echo "<tr><td>".$registrant['name']."</td>";
 				echo "<td>".$registrant['email']."</td>";

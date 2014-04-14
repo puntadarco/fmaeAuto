@@ -12,8 +12,8 @@ class DatabaseHandler
 	public function getConnection(){
 		$dbservername = "tcp:zcerg9eih1.database.windows.net,1433";
 		$dbname = "VeriCloud";
-		$usr = "veriadmin";
-		$pwd = "Automation0401";
+		$usr = "appuser";
+		$pwd = "Sodec0514";
 		
 		try {
 			$conn = new PDO ( 
